@@ -18,7 +18,7 @@ int main(int argc, char const *argv[]) {
 
   FILE* arquivo = fopen(path,"w+");
 
-  for(int i=0; i < time; i++){
+  for(double i=0; i < time; i+=0.1){
     
     position = getPosition(i, i-1);
     speed = getSpeed(i);
