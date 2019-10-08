@@ -1,4 +1,5 @@
 #include "simulation.h"
+#include <stdio.h>
 #include <math.h>
 
 /* calcula a integral utilizando o método trapezoidal

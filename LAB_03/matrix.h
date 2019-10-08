@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 
 #ifndef _MATRIX_H
 #define _MATRIX_H
@@ -17,6 +17,9 @@ typedef struct{
 
 // printa os elementos da matriz na tela.
 void matrix_print(Matrix mat);
+
+// printa os elementos da matriz num arquivo aberto
+void matrix_print_file(Matrix mat, FILE* arquivo);
 
 // cria uma matriz de m linhas e n colunas, recebendo como parâmetros
 // os elementos da ADT e um array de números (elements) de tamanho m*n

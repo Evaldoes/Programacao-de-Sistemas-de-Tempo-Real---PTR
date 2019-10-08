@@ -31,6 +31,31 @@ void matrix_print(Matrix mat){
   printf("\n\n");
 }
 
+// realiza o print da matriz num arquivo aberto. funcao roubada da funcao acima
+void matrix_print_file(Matrix mat, FILE* arquivo){
+
+  for(int i=0; i < mat.m; i++){
+    
+    for(int j=0; j < mat.n; j++){
+
+      if(j == 0){
+
+        fprintf(arquivo, "%4.2f,", mat.values[i][j]);
+
+      }else if(j == mat.n-1){
+
+        fprintf(arquivo, "%4.2f,", mat.values[i][j]);
+
+      }else{
+
+        fprintf(arquivo, "%4.2f,", mat.values[i][j]);
+        
+      }
+    }
+  }
+
+}
+
 // cria uma matriz de zeros, outra função desavergonhadamente
 // plagiada do prof.
 Matrix matrix_zeros(char name[MAX_NAME_SIZE], int m, int n){
