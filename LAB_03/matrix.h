@@ -49,6 +49,8 @@ Matrix matrix_scalar_mult(int scalar, Matrix mat);
 // cria uma matriz identidade
 Matrix matrix_identity(char name[MAX_NAME_SIZE], int m, int n);
 
+double print_time_file(double time, FILE* arquivo);
+
 
 
 

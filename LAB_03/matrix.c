@@ -31,6 +31,11 @@ void matrix_print(Matrix mat){
   printf("\n\n");
 }
 
+
+double print_time_file(double time, FILE* arquivo){
+  fprintf(arquivo, "%lf,", time);
+}
+
 // realiza o print da matriz num arquivo aberto. funcao roubada da funcao acima
 void matrix_print_file(Matrix mat, FILE* arquivo){
 
@@ -39,7 +44,6 @@ void matrix_print_file(Matrix mat, FILE* arquivo){
     for(int j=0; j < mat.n; j++){
 
       if(j == 0){
-
         fprintf(arquivo, "%4.2f,", mat.values[i][j]);
 
       }else if(j == mat.n-1){

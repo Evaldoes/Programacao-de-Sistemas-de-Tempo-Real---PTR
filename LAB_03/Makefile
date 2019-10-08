@@ -18,5 +18,6 @@ exec: Simulation
 clean: #remove arquivo somasub
 	rm -rf Simulation
 	rm -rf Simulation.h.gch
+	rm -rf *.ascii
 	rm -rf ${output}
 	clear

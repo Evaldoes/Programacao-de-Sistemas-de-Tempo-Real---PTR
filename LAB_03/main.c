@@ -23,11 +23,10 @@ int main(int argc, char const *argv[]) {
     position = getPosition(i, i-1);
     speed = getSpeed(i);
     result = simulate(i, getSpeed(i));
-
+    print_time_file(i, arquivo);
     matrix_print_file(position,arquivo);
     matrix_print_file(speed,arquivo);
     matrix_print_file(result,arquivo);
-    
     fprintf(arquivo,"\n");
   }
 
